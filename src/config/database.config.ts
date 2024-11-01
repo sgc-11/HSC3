@@ -12,7 +12,7 @@ export const databaseConfig: TypeOrmModuleOptions = {
   password: process.env.DATABASE_PASSWORD,
   database: process.env.DATABASE_NAME,
   autoLoadEntities: true,
-  synchronize: false, // Cambiado a false para producción
+  synchronize: true, // Cambiado a false para producción
   ssl: {
     rejectUnauthorized: false, // Necesario para Supabase
   },
